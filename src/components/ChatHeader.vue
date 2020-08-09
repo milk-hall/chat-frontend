@@ -3,7 +3,7 @@
     <v-app-bar color="#a2362d" dark>
       <v-app-bar-nav-icon @click="showDrawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Title</v-toolbar-title>
+      <v-toolbar-title>{{ title }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -27,7 +27,11 @@ export default {
   name: "ChatHeader",
 
   props: {
-    showDrawer: Function
+    showDrawer: Function,
+    title: {
+      type: String,
+      default: "聊天室"
+    }
   }
 };
 </script>
