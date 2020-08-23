@@ -12,9 +12,9 @@ export default {};
 .content {
   background: url("/bg.png") no-repeat center;
   background-size: 100%;
-  width: 80vw;
+  min-width: 80vw;
   flex: 1;
-  min-height: 720px;
+  height: 80vh;
   margin: 50px auto;
   text-align: center;
   align-items: center;
